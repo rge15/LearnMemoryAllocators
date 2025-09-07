@@ -1,0 +1,47 @@
+{
+   "version": "0.2.0",
+   "configurations": [
+      {
+         "name": "C++ Launch - Debug",
+         "type": "cppdbg",
+         "request": "launch",
+         "program": "${workspaceFolder}/bin/Debug/MemoryAllocatorsCore_Debug.exe",  // Ruta al ejecutable
+         "args": [],
+         "stopAtEntry": false,
+         "cwd": "${workspaceFolder}",
+         "environment": [],
+         "externalConsole": true,
+         "MIMode": "gdb",
+         "miDebuggerPath": "C:\\msys64\\usr\\bin\\gdb.exe",  // Ruta a gdb
+         "preLaunchTask": "Premake [Build-Debug]",
+         "setupCommands": [
+            {
+               "description": "Enable pretty-printing for gdb",
+               "text": "-enable-pretty-printing",
+               "ignoreFailures": false
+            }
+         ]
+      },
+      {
+         "name": "C++ Launch - Release",
+         "type": "cppdbg",
+         "request": "launch",
+         "program": "${workspaceFolder}/bin/Release/MemoryAllocatorsCore_Release.exe",  // Ruta al ejecutable
+         "args": [],
+         "stopAtEntry": false,
+         "cwd": "${workspaceFolder}",
+         "environment": [],
+         "externalConsole": true,
+         "MIMode": "gdb",
+         "miDebuggerPath": "C:\\msys64\\usr\\bin\\gdb.exe",  // Ruta a gdb
+         "preLaunchTask": "Premake [Build-Release]",
+         "setupCommands": [
+            {
+               "description": "Enable pretty-printing for gdb",
+               "text": "-enable-pretty-printing",
+               "ignoreFailures": false
+            }
+         ]
+      }
+   ]
+}

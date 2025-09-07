@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/include/**",
+                "C:/libs/glfw3/include/**",
+                "C:/libs/glad/include/**",
+                "C:/msys64/mingw64/include/*",
+                "C:/msys64/mingw64/include/c++/15.2.0/*",
+                "C:/msys64/mingw64/include/c++/15.2.0/bits/*"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:\\msys64\\mingw64\\bin\\g++.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}

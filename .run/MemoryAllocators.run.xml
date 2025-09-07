@@ -1,0 +1,10 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="MemoryAllocators" type="CppProject" factoryName="C++ Project" singleton="false">
+    <option name="DEFAULT_PROJECT_PATH" value="" />
+    <option name="PROJECT_FILE_PATH" value="" />
+    <option name="AUTO_SELECT_PRIORITY" value="0" />
+    <method v="2">
+      <option name="Build" />
+    </method>
+  </configuration>
+</component>

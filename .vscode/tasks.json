@@ -1,0 +1,91 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Premake [Make]",
+            "type": "shell",
+            "command": "premake5 gmake",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Premake [Build-Debug]",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "config=debug"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$msCompile",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true
+            }
+        },
+        {
+            "label": "Premake [Build-Release]",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "config=release"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$msCompile",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true
+            }
+        },
+        {
+            "label": "Run Debug",
+            "type": "shell",
+            "command": "${workspaceFolder}/bin/Debug/MemoryAllocatorsCore_Debug.exe",
+            "presentation": {
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "clear": false
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Run Release",
+            "type": "shell",
+            "command": "${workspaceFolder}/bin/Release/MemoryAllocatorsCore_Release.exe",
+            "presentation": {
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "clear": false
+            }
+        },
+        {
+         "label": "Clean Project",
+         "type": "shell",
+         "command": "premake5",
+         "args": ["Clean"],
+         "group": {
+            "kind": "build",
+            "isDefault": false
+         },
+         "problemMatcher": [],
+         "detail": "Clean the project"
+        }
+    ]
+}
